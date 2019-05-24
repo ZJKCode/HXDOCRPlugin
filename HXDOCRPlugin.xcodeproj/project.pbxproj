@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03C81ABF21DDF67600C119C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C81ABE21DDF67600C119C2 /* AppDelegate.m */; };
+		03C81AC221DDF67600C119C2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C81AC121DDF67600C119C2 /* ViewController.m */; };
+		03C81AC521DDF67600C119C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03C81AC321DDF67600C119C2 /* Main.storyboard */; };
+		03C81AC721DDF67800C119C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03C81AC621DDF67800C119C2 /* Assets.xcassets */; };
+		03C81ACA21DDF67800C119C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03C81AC821DDF67800C119C2 /* LaunchScreen.storyboard */; };
+		03C81ACD21DDF67800C119C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C81ACC21DDF67800C119C2 /* main.m */; };
+		03C81AEA21DDF6F300C119C2 /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C81AD421DDF6F300C119C2 /* TesseractOCR.framework */; };
+		03C81AEB21DDF6F300C119C2 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C81AD521DDF6F300C119C2 /* opencv2.framework */; };
+		03C81AEC21DDF6F300C119C2 /* WCIDCardScaningView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C81AD721DDF6F300C119C2 /* WCIDCardScaningView.m */; };
+		03C81AED21DDF6F300C119C2 /* UIImage+WCOCR.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C81AD821DDF6F300C119C2 /* UIImage+WCOCR.m */; };
+		03C81AEE21DDF6F300C119C2 /* WCAVCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C81ADA21DDF6F300C119C2 /* WCAVCaptureViewController.m */; };
+		03C81AEF21DDF6F300C119C2 /* UIAlertController+WCOCR.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C81ADB21DDF6F300C119C2 /* UIAlertController+WCOCR.m */; };
+		03C81AF021DDF6F300C119C2 /* NSTimer+WCOCR.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C81ADE21DDF6F300C119C2 /* NSTimer+WCOCR.m */; };
+		03C81AF121DDF6F300C119C2 /* WCOCRRecognize.mm in Sources */ = {isa = PBXBuildFile; fileRef = 03C81ADF21DDF6F300C119C2 /* WCOCRRecognize.mm */; };
+		03C81AF221DDF6F300C119C2 /* WCIDInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C81AE121DDF6F300C119C2 /* WCIDInfo.m */; };
+		03C81AF321DDF6F300C119C2 /* WCRectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C81AE421DDF6F300C119C2 /* WCRectManager.m */; };
+		03C81AF421DDF6F300C119C2 /* WCTakePhotoButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C81AE521DDF6F300C119C2 /* WCTakePhotoButton.m */; };
+		03C81AF621DDF70900C119C2 /* HXDOCRPlugin.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 03C81AF521DDF70900C119C2 /* HXDOCRPlugin.bundle */; };
+		03C81AF821DDF77100C119C2 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 03C81AF721DDF77100C119C2 /* tessdata */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		03C81ABA21DDF67600C119C2 /* HXDOCRPlugin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HXDOCRPlugin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03C81ABD21DDF67600C119C2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		03C81ABE21DDF67600C119C2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		03C81AC021DDF67600C119C2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		03C81AC121DDF67600C119C2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		03C81AC421DDF67600C119C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		03C81AC621DDF67800C119C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03C81AC921DDF67800C119C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		03C81ACB21DDF67800C119C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03C81ACC21DDF67800C119C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		03C81AD421DDF6F300C119C2 /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
+		03C81AD521DDF6F300C119C2 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		03C81AD721DDF6F300C119C2 /* WCIDCardScaningView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCIDCardScaningView.m; sourceTree = "<group>"; };
+		03C81AD821DDF6F300C119C2 /* UIImage+WCOCR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WCOCR.m"; sourceTree = "<group>"; };
+		03C81AD921DDF6F300C119C2 /* WCIDInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCIDInfo.h; sourceTree = "<group>"; };
+		03C81ADA21DDF6F300C119C2 /* WCAVCaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCAVCaptureViewController.m; sourceTree = "<group>"; };
+		03C81ADB21DDF6F300C119C2 /* UIAlertController+WCOCR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+WCOCR.m"; sourceTree = "<group>"; };
+		03C81ADC21DDF6F300C119C2 /* WCTakePhotoButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCTakePhotoButton.h; sourceTree = "<group>"; };
+		03C81ADD21DDF6F300C119C2 /* WCRectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCRectManager.h; sourceTree = "<group>"; };
+		03C81ADE21DDF6F300C119C2 /* NSTimer+WCOCR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+WCOCR.m"; sourceTree = "<group>"; };
+		03C81ADF21DDF6F300C119C2 /* WCOCRRecognize.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WCOCRRecognize.mm; sourceTree = "<group>"; };
+		03C81AE021DDF6F300C119C2 /* WCIDCardScaningView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCIDCardScaningView.h; sourceTree = "<group>"; };
+		03C81AE121DDF6F300C119C2 /* WCIDInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCIDInfo.m; sourceTree = "<group>"; };
+		03C81AE221DDF6F300C119C2 /* UIImage+WCOCR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WCOCR.h"; sourceTree = "<group>"; };
+		03C81AE321DDF6F300C119C2 /* WCOCRRecognize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCOCRRecognize.h; sourceTree = "<group>"; };
+		03C81AE421DDF6F300C119C2 /* WCRectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCRectManager.m; sourceTree = "<group>"; };
+		03C81AE521DDF6F300C119C2 /* WCTakePhotoButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCTakePhotoButton.m; sourceTree = "<group>"; };
+		03C81AE621DDF6F300C119C2 /* UIAlertController+WCOCR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+WCOCR.h"; sourceTree = "<group>"; };
+		03C81AE721DDF6F300C119C2 /* WCAVCaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCAVCaptureViewController.h; sourceTree = "<group>"; };
+		03C81AE821DDF6F300C119C2 /* NSTimer+WCOCR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+WCOCR.h"; sourceTree = "<group>"; };
+		03C81AE921DDF6F300C119C2 /* HXDOCRPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXDOCRPlugin.h; sourceTree = "<group>"; };
+		03C81AF521DDF70900C119C2 /* HXDOCRPlugin.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HXDOCRPlugin.bundle; sourceTree = "<group>"; };
+		03C81AF721DDF77100C119C2 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03C81AB721DDF67600C119C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03C81AEB21DDF6F300C119C2 /* opencv2.framework in Frameworks */,
+				03C81AEA21DDF6F300C119C2 /* TesseractOCR.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03C81AB121DDF67600C119C2 = {
+			isa = PBXGroup;
+			children = (
+				03C81ABC21DDF67600C119C2 /* HXDOCRPlugin */,
+				03C81ABB21DDF67600C119C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03C81ABB21DDF67600C119C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03C81ABA21DDF67600C119C2 /* HXDOCRPlugin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03C81ABC21DDF67600C119C2 /* HXDOCRPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				03C81AF721DDF77100C119C2 /* tessdata */,
+				03C81ABD21DDF67600C119C2 /* AppDelegate.h */,
+				03C81ABE21DDF67600C119C2 /* AppDelegate.m */,
+				03C81AF521DDF70900C119C2 /* HXDOCRPlugin.bundle */,
+				03C81AD321DDF6F300C119C2 /* 3rd */,
+				03C81AD621DDF6F300C119C2 /* core */,
+				03C81AE921DDF6F300C119C2 /* HXDOCRPlugin.h */,
+				03C81AC021DDF67600C119C2 /* ViewController.h */,
+				03C81AC121DDF67600C119C2 /* ViewController.m */,
+				03C81AC321DDF67600C119C2 /* Main.storyboard */,
+				03C81AC621DDF67800C119C2 /* Assets.xcassets */,
+				03C81AC821DDF67800C119C2 /* LaunchScreen.storyboard */,
+				03C81ACB21DDF67800C119C2 /* Info.plist */,
+				03C81ACC21DDF67800C119C2 /* main.m */,
+			);
+			path = HXDOCRPlugin;
+			sourceTree = "<group>";
+		};
+		03C81AD321DDF6F300C119C2 /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				03C81AD421DDF6F300C119C2 /* TesseractOCR.framework */,
+				03C81AD521DDF6F300C119C2 /* opencv2.framework */,
+			);
+			path = 3rd;
+			sourceTree = "<group>";
+		};
+		03C81AD621DDF6F300C119C2 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				03C81AE821DDF6F300C119C2 /* NSTimer+WCOCR.h */,
+				03C81ADE21DDF6F300C119C2 /* NSTimer+WCOCR.m */,
+				03C81AE621DDF6F300C119C2 /* UIAlertController+WCOCR.h */,
+				03C81ADB21DDF6F300C119C2 /* UIAlertController+WCOCR.m */,
+				03C81AE221DDF6F300C119C2 /* UIImage+WCOCR.h */,
+				03C81AD821DDF6F300C119C2 /* UIImage+WCOCR.m */,
+				03C81AE721DDF6F300C119C2 /* WCAVCaptureViewController.h */,
+				03C81ADA21DDF6F300C119C2 /* WCAVCaptureViewController.m */,
+				03C81AE021DDF6F300C119C2 /* WCIDCardScaningView.h */,
+				03C81AD721DDF6F300C119C2 /* WCIDCardScaningView.m */,
+				03C81AD921DDF6F300C119C2 /* WCIDInfo.h */,
+				03C81AE121DDF6F300C119C2 /* WCIDInfo.m */,
+				03C81AE321DDF6F300C119C2 /* WCOCRRecognize.h */,
+				03C81ADF21DDF6F300C119C2 /* WCOCRRecognize.mm */,
+				03C81ADD21DDF6F300C119C2 /* WCRectManager.h */,
+				03C81AE421DDF6F300C119C2 /* WCRectManager.m */,
+				03C81ADC21DDF6F300C119C2 /* WCTakePhotoButton.h */,
+				03C81AE521DDF6F300C119C2 /* WCTakePhotoButton.m */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03C81AB921DDF67600C119C2 /* HXDOCRPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03C81AD021DDF67800C119C2 /* Build configuration list for PBXNativeTarget "HXDOCRPlugin" */;
+			buildPhases = (
+				03C81AB621DDF67600C119C2 /* Sources */,
+				03C81AB721DDF67600C119C2 /* Frameworks */,
+				03C81AB821DDF67600C119C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HXDOCRPlugin;
+			productName = HXDOCRPlugin;
+			productReference = 03C81ABA21DDF67600C119C2 /* HXDOCRPlugin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03C81AB221DDF67600C119C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = com.winchannel.net;
+				TargetAttributes = {
+					03C81AB921DDF67600C119C2 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 03C81AB521DDF67600C119C2 /* Build configuration list for PBXProject "HXDOCRPlugin" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03C81AB121DDF67600C119C2;
+			productRefGroup = 03C81ABB21DDF67600C119C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03C81AB921DDF67600C119C2 /* HXDOCRPlugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03C81AB821DDF67600C119C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03C81ACA21DDF67800C119C2 /* LaunchScreen.storyboard in Resources */,
+				03C81AC721DDF67800C119C2 /* Assets.xcassets in Resources */,
+				03C81AF821DDF77100C119C2 /* tessdata in Resources */,
+				03C81AF621DDF70900C119C2 /* HXDOCRPlugin.bundle in Resources */,
+				03C81AC521DDF67600C119C2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03C81AB621DDF67600C119C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03C81AF221DDF6F300C119C2 /* WCIDInfo.m in Sources */,
+				03C81AC221DDF67600C119C2 /* ViewController.m in Sources */,
+				03C81ACD21DDF67800C119C2 /* main.m in Sources */,
+				03C81AF321DDF6F300C119C2 /* WCRectManager.m in Sources */,
+				03C81ABF21DDF67600C119C2 /* AppDelegate.m in Sources */,
+				03C81AEC21DDF6F300C119C2 /* WCIDCardScaningView.m in Sources */,
+				03C81AEE21DDF6F300C119C2 /* WCAVCaptureViewController.m in Sources */,
+				03C81AF021DDF6F300C119C2 /* NSTimer+WCOCR.m in Sources */,
+				03C81AF121DDF6F300C119C2 /* WCOCRRecognize.mm in Sources */,
+				03C81AED21DDF6F300C119C2 /* UIImage+WCOCR.m in Sources */,
+				03C81AEF21DDF6F300C119C2 /* UIAlertController+WCOCR.m in Sources */,
+				03C81AF421DDF6F300C119C2 /* WCTakePhotoButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		03C81AC321DDF67600C119C2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03C81AC421DDF67600C119C2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		03C81AC821DDF67800C119C2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03C81AC921DDF67800C119C2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03C81ACE21DDF67800C119C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		03C81ACF21DDF67800C119C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03C81AD121DDF67800C119C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7WW69WRWC7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HXDOCRPlugin/3rd",
+				);
+				INFOPLIST_FILE = HXDOCRPlugin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.winchannel.net.HXDOCRPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		03C81AD221DDF67800C119C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7WW69WRWC7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HXDOCRPlugin/3rd",
+				);
+				INFOPLIST_FILE = HXDOCRPlugin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.winchannel.net.HXDOCRPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03C81AB521DDF67600C119C2 /* Build configuration list for PBXProject "HXDOCRPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03C81ACE21DDF67800C119C2 /* Debug */,
+				03C81ACF21DDF67800C119C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03C81AD021DDF67800C119C2 /* Build configuration list for PBXNativeTarget "HXDOCRPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03C81AD121DDF67800C119C2 /* Debug */,
+				03C81AD221DDF67800C119C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03C81AB221DDF67600C119C2 /* Project object */;
+}
